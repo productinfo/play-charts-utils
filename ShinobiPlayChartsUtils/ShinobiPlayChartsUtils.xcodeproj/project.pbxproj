@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		684FAE131A6690EB000DD2BC /* libShinobiPlayChartsUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684FAE071A6690EB000DD2BC /* libShinobiPlayChartsUtils.a */; };
+		689A3BB01A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689A3BAF1A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.m */; };
+		689A3BB11A66A3BF006EB8D3 /* libShinobiPlayUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A3BAB1A66A266006EB8D3 /* libShinobiPlayUtils.a */; };
+		689A3BB31A66A3E4006EB8D3 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A3BB21A66A3E4006EB8D3 /* ShinobiCharts.framework */; };
+		689A3BB41A66A477006EB8D3 /* SPUGalleryManagedChartViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 689A3BAE1A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		684FAE141A6690EB000DD2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684FADFF1A6690EB000DD2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684FAE061A6690EB000DD2BC;
+			remoteInfo = ShinobiPlayChartsUtils;
+		};
+		689A3BAA1A66A266006EB8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689A3BA51A66A265006EB8D3 /* ShinobiPlayUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68793C011959855D009C17BD;
+			remoteInfo = ShinobiPlayUtils;
+		};
+		689A3BAC1A66A266006EB8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689A3BA51A66A265006EB8D3 /* ShinobiPlayUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68793C111959855E009C17BD;
+			remoteInfo = ShinobiPlayUtilsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		684FAE051A6690EB000DD2BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				689A3BB41A66A477006EB8D3 /* SPUGalleryManagedChartViewController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		684FAE071A6690EB000DD2BC /* libShinobiPlayChartsUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShinobiPlayChartsUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		684FAE121A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinobiPlayChartsUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		684FAE181A6690EB000DD2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689A3BA51A66A265006EB8D3 /* ShinobiPlayUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShinobiPlayUtils.xcodeproj; path = ShinobiPlayUtils/ShinobiPlayUtils/ShinobiPlayUtils.xcodeproj; sourceTree = "<group>"; };
+		689A3BAE1A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUGalleryManagedChartViewController.h; sourceTree = "<group>"; };
+		689A3BAF1A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUGalleryManagedChartViewController.m; sourceTree = "<group>"; };
+		689A3BB21A66A3E4006EB8D3 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		684FAE041A6690EB000DD2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689A3BB31A66A3E4006EB8D3 /* ShinobiCharts.framework in Frameworks */,
+				689A3BB11A66A3BF006EB8D3 /* libShinobiPlayUtils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684FAE0F1A6690EB000DD2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684FAE131A6690EB000DD2BC /* libShinobiPlayChartsUtils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684FADFE1A6690EB000DD2BC = {
+			isa = PBXGroup;
+			children = (
+				689A3BB21A66A3E4006EB8D3 /* ShinobiCharts.framework */,
+				689A3BA51A66A265006EB8D3 /* ShinobiPlayUtils.xcodeproj */,
+				684FAE091A6690EB000DD2BC /* ShinobiPlayChartsUtils */,
+				684FAE161A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests */,
+				684FAE081A6690EB000DD2BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		684FAE081A6690EB000DD2BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				684FAE071A6690EB000DD2BC /* libShinobiPlayChartsUtils.a */,
+				684FAE121A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		684FAE091A6690EB000DD2BC /* ShinobiPlayChartsUtils */ = {
+			isa = PBXGroup;
+			children = (
+				689A3BAE1A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.h */,
+				689A3BAF1A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.m */,
+			);
+			path = ShinobiPlayChartsUtils;
+			sourceTree = "<group>";
+		};
+		684FAE161A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				684FAE171A6690EB000DD2BC /* Supporting Files */,
+			);
+			path = ShinobiPlayChartsUtilsTests;
+			sourceTree = "<group>";
+		};
+		684FAE171A6690EB000DD2BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				684FAE181A6690EB000DD2BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		689A3BA61A66A265006EB8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				689A3BAB1A66A266006EB8D3 /* libShinobiPlayUtils.a */,
+				689A3BAD1A66A266006EB8D3 /* ShinobiPlayUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		684FAE061A6690EB000DD2BC /* ShinobiPlayChartsUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684FAE1B1A6690EB000DD2BC /* Build configuration list for PBXNativeTarget "ShinobiPlayChartsUtils" */;
+			buildPhases = (
+				684FAE031A6690EB000DD2BC /* Sources */,
+				684FAE041A6690EB000DD2BC /* Frameworks */,
+				684FAE051A6690EB000DD2BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShinobiPlayChartsUtils;
+			productName = ShinobiPlayChartsUtils;
+			productReference = 684FAE071A6690EB000DD2BC /* libShinobiPlayChartsUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		684FAE111A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684FAE1E1A6690EB000DD2BC /* Build configuration list for PBXNativeTarget "ShinobiPlayChartsUtilsTests" */;
+			buildPhases = (
+				684FAE0E1A6690EB000DD2BC /* Sources */,
+				684FAE0F1A6690EB000DD2BC /* Frameworks */,
+				684FAE101A6690EB000DD2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684FAE151A6690EB000DD2BC /* PBXTargetDependency */,
+			);
+			name = ShinobiPlayChartsUtilsTests;
+			productName = ShinobiPlayChartsUtilsTests;
+			productReference = 684FAE121A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		684FADFF1A6690EB000DD2BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alison Clarke";
+				TargetAttributes = {
+					684FAE061A6690EB000DD2BC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					684FAE111A6690EB000DD2BC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 684FAE021A6690EB000DD2BC /* Build configuration list for PBXProject "ShinobiPlayChartsUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 684FADFE1A6690EB000DD2BC;
+			productRefGroup = 684FAE081A6690EB000DD2BC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 689A3BA61A66A265006EB8D3 /* Products */;
+					ProjectRef = 689A3BA51A66A265006EB8D3 /* ShinobiPlayUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				684FAE061A6690EB000DD2BC /* ShinobiPlayChartsUtils */,
+				684FAE111A6690EB000DD2BC /* ShinobiPlayChartsUtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		689A3BAB1A66A266006EB8D3 /* libShinobiPlayUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShinobiPlayUtils.a;
+			remoteRef = 689A3BAA1A66A266006EB8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		689A3BAD1A66A266006EB8D3 /* ShinobiPlayUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ShinobiPlayUtilsTests.xctest;
+			remoteRef = 689A3BAC1A66A266006EB8D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		684FAE101A6690EB000DD2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		684FAE031A6690EB000DD2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689A3BB01A66A28A006EB8D3 /* SPUGalleryManagedChartViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684FAE0E1A6690EB000DD2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		684FAE151A6690EB000DD2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684FAE061A6690EB000DD2BC /* ShinobiPlayChartsUtils */;
+			targetProxy = 684FAE141A6690EB000DD2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		684FAE191A6690EB000DD2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		684FAE1A1A6690EB000DD2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		684FAE1C1A6690EB000DD2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		684FAE1D1A6690EB000DD2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		684FAE1F1A6690EB000DD2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShinobiPlayChartsUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		684FAE201A6690EB000DD2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShinobiPlayChartsUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		684FAE021A6690EB000DD2BC /* Build configuration list for PBXProject "ShinobiPlayChartsUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684FAE191A6690EB000DD2BC /* Debug */,
+				684FAE1A1A6690EB000DD2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684FAE1B1A6690EB000DD2BC /* Build configuration list for PBXNativeTarget "ShinobiPlayChartsUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684FAE1C1A6690EB000DD2BC /* Debug */,
+				684FAE1D1A6690EB000DD2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684FAE1E1A6690EB000DD2BC /* Build configuration list for PBXNativeTarget "ShinobiPlayChartsUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684FAE1F1A6690EB000DD2BC /* Debug */,
+				684FAE201A6690EB000DD2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 684FADFF1A6690EB000DD2BC /* Project object */;
+}
