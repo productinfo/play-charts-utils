@@ -26,6 +26,8 @@
 
 @property (strong, nonatomic) IBOutlet ShinobiChart *chart;
 @property (strong, nonatomic) NSObject<SChartDatasource> *dataSource;
+@property (strong, nonatomic) NSMutableDictionary *selectedDonutIndices;
+@property (strong, nonatomic) NSMutableDictionary *rotations;
 
 - (void)createChart;
 - (void)createDataSource;

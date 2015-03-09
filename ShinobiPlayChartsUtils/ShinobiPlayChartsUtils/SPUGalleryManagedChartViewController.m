@@ -24,8 +24,6 @@
 @interface SPUGalleryManagedChartViewController ()
 
 @property (strong, nonatomic) NSMutableArray *ranges;
-@property (strong, nonatomic) NSMutableDictionary *selectedDonutIndices;
-@property (strong, nonatomic) NSMutableDictionary *rotations;
 @property (assign, nonatomic) CGRect chartFrame;
 
 @end
