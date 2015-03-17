@@ -71,24 +71,26 @@
 - (void)viewDidDisappear:(BOOL)animated {
   [super viewDidDisappear:animated];
   
-  // Save the current state
-  self.chartFrame = self.chart.frame;
-  self.ranges = [NSMutableArray new];
-  for (SChartAxis *axis in self.chart.allAxes) {
-    [self.ranges addObject:axis.axisRange];
-  }
-  
-  for (NSInteger i=0; i < self.chart.series.count; i++) {
-    SChartSeries* series = self.chart.series[i];
-    if ([series isKindOfClass:[SChartDonutSeries class]]) {
-      self.rotations[@(i)] = @(((SChartDonutSeries *)series).rotation);
+  if ([self isMovingFromParentViewController]) {
+    // Save the current state
+    self.chartFrame = self.chart.frame;
+    self.ranges = [NSMutableArray new];
+    for (SChartAxis *axis in self.chart.allAxes) {
+      [self.ranges addObject:axis.axisRange];
     }
+    
+    for (NSInteger i=0; i < self.chart.series.count; i++) {
+      SChartSeries* series = self.chart.series[i];
+      if ([series isKindOfClass:[SChartDonutSeries class]]) {
+        self.rotations[@(i)] = @(((SChartDonutSeries *)series).rotation);
+      }
+    }
+    
+    // Throw away the chart and datasource
+    [self.chart removeFromSuperview];
+    self.chart = nil;
+    self.dataSource = nil;
   }
-  
-  // Throw away the chart and datasource
-  [self.chart removeFromSuperview];
-  self.chart = nil;
-  self.dataSource = nil;
 }
 
 #pragma mark - lifecycle methods that can be implemented in subclasses
