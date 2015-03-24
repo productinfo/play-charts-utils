@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ShinobiPlayChartsUtils"
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = "Files common to ShinobiPlay charts projects"
   s.description      = <<-DESC
                        Files common to ShinobiPlay charts projects, e.g. utility classes and base classes
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'ShinobiPlayChartsUtils/ShinobiPlayChartsUtils/**/*.{h,m}'
   s.dependency 'ShinobiPlayUtils'
-  s.frameworks = 'QuartzCore', 'ShinobiCharts'
+  s.frameworks = 'QuartzCore', 'ShinobiCharts', 'OpenGLES', 'CoreText'
+  s.libraries = 'c++'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(DEVELOPER_FRAMEWORKS_DIR)"' }
 end
