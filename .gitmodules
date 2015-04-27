@@ -1,4 +1,4 @@
 [submodule "ShinobiPlayChartsUtils/ShinobiPlayUtils"]
 	path = ShinobiPlayChartsUtils/ShinobiPlayUtils
-	url = git@bitbucket.org:shinobicontrols/shinobi-play-utils.git
+	url = git@github.com:ShinobiControls/play-utils.git
 	branch = master
