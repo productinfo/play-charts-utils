@@ -76,7 +76,7 @@
     self.chartFrame = self.chart.frame;
     self.ranges = [NSMutableArray new];
     for (SChartAxis *axis in self.chart.allAxes) {
-      [self.ranges addObject:axis.axisRange];
+      [self.ranges addObject:axis.range];
     }
     
     for (NSInteger i=0; i < self.chart.series.count; i++) {
@@ -127,7 +127,7 @@
     for (int i=0; i<self.chart.allAxes.count && i<self.ranges.count; i++) {
       if (self.ranges[i]) {
         SChartRange *range = (SChartRange *)self.ranges[i];
-        [self.chart.allAxes[i] setRangeWithMinimum:range.minimum andMaximum:range.maximum];
+        self.chart.allAxes[i].range = range;
       }
     }
   }
@@ -146,8 +146,10 @@
         // chart state
         // b) we're not actually changing the data itself so we don't need to worry about
         // inconsistencies with the data source
-        SChartDataPoint *dp = series.dataSeries.dataPoints[[index integerValue]];
-        dp.selected = YES;
+        id<SChartData> dp = series.dataSeries.dataPoints[[index integerValue]];
+        NSMutableSet *selectedDPs = [NSMutableSet setWithSet:series.selectedDataPoints];
+        [selectedDPs addObject:dp];
+        series.selectedDataPoints = [selectedDPs copy];
       }
       donutSeries.style.initialRotation = self.rotations[seriesIndex];
     }
@@ -164,7 +166,7 @@
     self.selectedDonutIndices[seriesIndex] = [NSMutableArray new];
   }
   
-  if (dataPoint.selected) {
+  if ([series.selectedDataPoints containsObject:dataPoint]) {
     [self.selectedDonutIndices[seriesIndex] addObject:@(dataPoint.index)];
   } else {
     [self.selectedDonutIndices[seriesIndex] removeObject:@(dataPoint.index)];
