@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.source_files = 'ShinobiPlayChartsUtils/ShinobiPlayChartsUtils/**/*.{h,m}'
   s.dependency 'ShinobiPlayUtils'
   s.frameworks = 'QuartzCore', 'ShinobiCharts', 'OpenGLES', 'CoreText'
-  s.libraries = 'stdc++'
+  s.libraries = 'c++'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(DEVELOPER_FRAMEWORKS_DIR)"' }
 end
